@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Figures {
 	
-	private static int size = 0;
+	
 	private static Scanner scan;
 	
 	public static void main(String[] args) {
@@ -48,9 +48,7 @@ public class Figures {
 		if (useroption == 1) {
 			
 			System.out.println(" ");
-			Box userBox = new Box();
-			userBox.size = usersize;
-			userBox.printBox1();
+			printBox(usersize);
 			
 		} else if (useroption == 2) {
 			
@@ -73,7 +71,7 @@ public class Figures {
 		scan.close();	
 	}
 	
-	public static void printBox() {
+	public static void printBox(int size) {
 		
 		for (int a = 0; a < size; a++) {
 			String line = " ";
